@@ -19,4 +19,6 @@ require("./startups/prod")(app);
 require("./startups/routes")(app);
 require("./startups/socket")(io);
 
-server.listen(PORT, () => console.log(`Server is running on port ${PORT}...`));
+server.listen(PORT, () =>
+  console.log(`Server is running on port - ${PORT}...`)
+);
