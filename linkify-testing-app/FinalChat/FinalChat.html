@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Final Testing Sockets with Token</title>
+    <link rel="stylesheet" href="FinalChat.css" />
+  </head>
+  <body>
+    <h1>Welcome to Linkify Chat Application</h1>
+    <section class="chat_section">
+      <div class="chat_form_input">
+        <input
+          type="text"
+          id="chatId"
+          name="chatid"
+          placeholder="Enter your chat id"
+        />
+        <button type="button" id="joinRoom" class="send_btn">Join Room</button>
+      </div>
+      <div class="chat_message_list_div" id="messageContainer">
+        <ul id="chatList" class="chat_messages_list"></ul>
+        <p id="typing"></p>
+      </div>
+      <form id="chatFrm" class="chat_form_input">
+        <input
+          type="text"
+          id="myInput"
+          name="message"
+          placeholder="Type here..."
+        />
+        <button type="submit" class="send_btn" id="sendBtn">Send</button>
+      </form>
+    </section>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.min.js"
+    integrity="sha512-8ExARjWWkIllMlNzVg7JKq9RKWPlJABQUNq6YvAjE/HobctjH/NA+bSiDMDvouBVjp4Wwnf1VP1OEv7Zgjtuxw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="FinalChat.js"></script>
+</html>

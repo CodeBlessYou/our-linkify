@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Testing Sockets</title>
+    <link rel="stylesheet" href="RoomChat.css" />
+  </head>
+  <body>
+    <h1>Welcome to Linkify Chat Application</h1>
+    <form id="chatFrm" class="chat_form">
+      <div class="username_div">
+        <p>Username</p>
+        <input
+          type="text"
+          id="username"
+          name="username"
+          placeholder="Enter your username"
+        />
+      </div>
+      <div class="chat_message_list_div">
+        <ul id="chatList" class="chat_messages_list"></ul>
+        <p id="typing"></p>
+      </div>
+      <div class="chat_input">
+        <input
+          type="text"
+          id="myInput"
+          name="message"
+          placeholder="Type here..."
+        />
+        <button type="submit" class="send_btn" id="sendBtn">Send</button>
+      </div>
+    </form>
+  </body>
+
+  <script
+    src="https://cdnjs.cloudflare.com/ajax/libs/socket.io/4.8.1/socket.io.min.js"
+    integrity="sha512-8ExARjWWkIllMlNzVg7JKq9RKWPlJABQUNq6YvAjE/HobctjH/NA+bSiDMDvouBVjp4Wwnf1VP1OEv7Zgjtuxw=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"
+  ></script>
+  <script src="RoomChat.js"></script>
+</html>
